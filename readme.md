@@ -49,6 +49,9 @@ Se realiza también un cálculo de la estación más cercana a través de funcio
 ### Desarrollo:
 
 Para el desarrollo se usa github con github actions para ci/cd.
+backend:
+
+![](./images/back.png)
 
 ### Diseño principal:
 
