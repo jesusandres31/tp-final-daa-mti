@@ -1,14 +1,11 @@
-  
- 
 // You can also define relaionship separately
 // > many-to-one; < one-to-many; - one-to-one; <> many-to-many
 // Ref: U.country_code > countries.code  
-  
-  
+    
 Table usuarios as U {
   id int [pk, increment] // auto-increment
-    rol_id int
- dispositivo_id int
+  rol_id int
+  dispositivo_id int
   cuenta_id int
   nombre varchar
   apellido varchar 
@@ -19,78 +16,71 @@ Table cuentas as C {
   name varchar
   MP_cod varchar
   created_at varchar
- }
-
+}
 
 Table roles as R {
   id int [pk]
   name varchar 
- }
+}
  
- Ref: R.id < U.rol_id  
- Ref: C.id <> U.cuenta_id  
+Ref: R.id < U.rol_id  
+Ref: C.id <> U.cuenta_id  
 
 Table dispositivos as D {
   id int [pk]
   codigo varchar
   metadata varchar
- }
+}
  
-  Ref: D.id < U.dispositivo_id  
+Ref: D.id < U.dispositivo_id  
 
 Table notificaciones as N {
   id int [pk]
-   user_id int 
+  user_id int 
   titulo varchar
   mensaje varchar
- }
+}
  
-   Ref: N.user_id > U.id  
-
+Ref: N.user_id > U.id  
  
-   
 Table monopatines as M {
   id int [pk, increment] // auto-increment
-    modelo varchar
- patente varchar 
+  modelo varchar
+  patente varchar 
 }
  
 Table usuarios_monopatines as UM {
   id int [pk, increment] // auto-increment
- user_id int
- monop_id int 
- tiempo_uso float8
- 
+  user_id int
+  monop_id int 
+  tiempo_uso float8
 }
 
-   Ref: UM.user_id < U.id  
-   Ref: UM.monop_id < M.id  
-
- 
+Ref: UM.user_id < U.id  
+Ref: UM.monop_id < M.id  
  
 Table viajes as V {
   id int [pk, increment] // auto-increment
- estacion_inicio int
- estacion_final int
+  estacion_inicio int
+  estacion_final int
 }
 
-
-   Ref: V.estacion_inicio > E.id  
-   Ref: V.estacion_final > E.id  
+Ref: V.estacion_inicio > E.id  
+Ref: V.estacion_final > E.id  
  
 Table pagos as P {
   id int [pk, increment] // auto-increment
- total varchar
- cvu varchar
- id_viaje int
+  total varchar
+  cvu varchar
+  id_viaje int
 }
  
- Ref: V.id - P.id_viaje  
-  Ref: M.id <> V.id  
+Ref: V.id - P.id_viaje  
+Ref: M.id <> V.id  
 
 Table estaciones as E {
   id int [pk, increment] // auto-increment
- ubicacion varchar 
+  ubicacion varchar 
 }
  
  
