@@ -17,6 +17,8 @@
 
 ## Decisiones que complacen las US y Requerimientos:
 
+<br />
+
 ### Arquitectura principal:
 
 Dado que lo que se requiere es que el sistema esté siempre activo y que sea rápido. Se optó por una arquitectura de microservicios basada en la nube.
