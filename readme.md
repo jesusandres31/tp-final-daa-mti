@@ -5,15 +5,11 @@
 - Falcone Oscar Andres
 - Zini Jesus Andres
 
-<hr />
-
 ## Atributos más importantes a tener en cuenta para tomar las decisiones:
 
 - disponibilidad y performance.
 - seguridad
 - escalabilidad y desplegabilidad
-
-<hr />
 
 ## Decisiones que complacen las US y Requerimientos:
 
@@ -94,9 +90,7 @@ Para el desarrollo se usa github con github actions y Travis CI para integració
 <img src="./images/back.png" alt="drawing" height="600"/>
 
 <br />
-
-<hr />
-
+ 
 ## Escenarios y cómo las decisiones tomadas cumple los requerimientos:
 
 <br />
