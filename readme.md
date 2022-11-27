@@ -2,8 +2,9 @@
 
 ## Integrantes
 
-- Falcone Oscar Andres
-- Zini Jesus Andres
+- Falcone, Oscar Andres
+- Fernandez, Laura Isabel
+- Zini, Jesus Andres 
 
 ## Atributos más importantes a tener en cuenta para tomar las decisiones:
 
